@@ -104,13 +104,12 @@
 [demo源码](https://github.com/ipaynowORG/ipaynow_pay_php)
 
 
-
+<h4 id='1.3'>1.3 DEMO使用</h4>
 - 支付测试实例：example
     TradeTest.php 直接运行即可
-     <h4 id='1.3'>1.3 DEMO使用</h4>
 
    使用方法: 
-     
+        
      导入 
      require_once 'service/TradeService.php';
      
