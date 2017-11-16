@@ -7,4 +7,4 @@
  */
 require_once '../service/OrderQueryService.php';
 
-print OrderQueryService::orederQuery("150753082825470","8jTST7ywIBY0QQ3RlcxWEl08Xj9gaYyQ","eY85WUOEoSP1X","05");
+print OrderQueryService::orederQuery("xxxxxxxxxxxxxx","xxxxxxxxxxxxxxxxxxxxxxx","eY85WUOEoSP1X","05");
