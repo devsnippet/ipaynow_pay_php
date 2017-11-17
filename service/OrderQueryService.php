@@ -17,10 +17,11 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery05($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"05");
+    public static function orederQuery05($appId,$appKey,$mhtOrderNo,$isTest=true){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"05",$isTest);
     }
 
     /**
@@ -28,10 +29,11 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery08($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"08");
+    public static function orederQuery08($appId,$appKey,$mhtOrderNo,$isTest=true){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"08",$isTest);
     }
 
     /**
@@ -39,10 +41,11 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery0600($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"0600");
+    public static function orederQuery0600($appId,$appKey,$mhtOrderNo,$isTest=true){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"0600",$isTest);
     }
 
 
@@ -51,10 +54,11 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery0601($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"0601");
+    public static function orederQuery0601($appId,$appKey,$mhtOrderNo,$isTest){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"0601",$isTest);
     }
 
     /**
@@ -62,10 +66,12 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery04($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"04");
+    public static function orederQuery04($appId,$appKey,$mhtOrderNo,$isTest=true){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"04",$isTest);
     }
 
     /**
@@ -73,15 +79,16 @@ class OrderQueryService{
      * @param $appId
      * @param $appKey
      * @param $mhtOrderNo
+     * @param $isTest 是否测试 True 测试环境 False 生产环境
      * @return string
      */
-    public static function orederQuery14($appId,$appKey,$mhtOrderNo){
-        return self::orederQuery($appId,$appKey,$mhtOrderNo,"14");
+    public static function orederQuery14($appId,$appKey,$mhtOrderNo,$isTest=true){
+        return self::orederQuery($appId,$appKey,$mhtOrderNo,"14",$isTest);
     }
 
 
 
-    public static function orederQuery($appId,$appKey,$mhtOrderNo,$deviceType){
+    public static function orederQuery($appId,$appKey,$mhtOrderNo,$deviceType,$isTest){
         $param = array();
         $param["funcode"] = "MQ002";
         $param["version"] = "1.0.0";
@@ -92,7 +99,16 @@ class OrderQueryService{
         $param["mhtSignType"] = "MD5";
         $param["mhtSignature"] = ParamUtil::buildSignature(ParamUtil::createParamString($param,true,false),$appKey);
         $req_str = ParamUtil::createParamString($param, false, false);
-        $resp_str = HttpUtil::send_post("https://pay.ipaynow.cn",$req_str);
+        if ($isTest){
+            $url = "https://dby.ipaynow.cn/api/payment";
+        }else{
+            $url = "https://pay.ipaynow.cn";
+        }
+        echo $url;
+        echo "\n";
+        echo $req_str;
+        echo "\n";
+        $resp_str = HttpUtil::send_post($url,$req_str);
         return urldecode($resp_str);
     }
 

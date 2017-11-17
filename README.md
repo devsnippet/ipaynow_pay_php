@@ -140,9 +140,10 @@
                 * @param $mhtOrderAmt 订单金额单位分
                 * @param $notifyUrl  商户后台通知URL
                 * @param $channelAuthCode 支付授权码
+                * @param $isTest 是否测试 True 测试环境 False 生产环境
                 * @return string
                 */
-               public static function wx_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode)
+               public static function wx_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode,$isTest)
            
        <h5 id='2.1.2'></h5>
        
@@ -157,9 +158,10 @@
              * @param $mhtOrderAmt 订单金额单位分
              * @param $notifyUrl  商户后台通知URL
              * @param $channelAuthCode 支付授权码
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-            public static function ali_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode)       
+            public static function ali_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode,$isTest)       
        
        <h5 id='2.1.3'></h5>
        
@@ -174,9 +176,10 @@
                * @param $mhtOrderAmt 订单金额单位分
                * @param $notifyUrl  商户后台通知URL   
                * @param $channelAuthCode 支付授权码
+               * @param $isTest 是否测试 True 测试环境 False 生产环境
                * @return string
                */
-              public static function handq_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode){
+              public static function handq_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode,$isTest)
            
        <h5 id='2.1.4'></h5>
        
@@ -192,9 +195,10 @@
               * @param $mhtOrderAmt 订单金额单位分
               * @param $notifyUrl  商户后台通知URL
               * @param $channelAuthCode 支付授权码
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
               */
-             public static function jd_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode)
+             public static function jd_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode,$isTest)
              
        <h5 id='2.1.5'></h5>
        
@@ -210,9 +214,10 @@
              * @param $mhtOrderAmt 订单金额单位分
              * @param $notifyUrl  商户后台通知URL
              * @param $channelAuthCode 支付授权码
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-                public static function union_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode)               
+             public static function union_trade05($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$channelAuthCode,$isTest)               
        <h5 id='2.1.6'></h5>
        - 微信主扫支付
        
@@ -226,9 +231,10 @@
              * @param $mhtOrderAmt 订单金额单位分
              * @param $notifyUrl  商户后台通知URL
              * @param $outputType 输出格式  0 返回二维码串 1 返回支付链接
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function wx_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType)
+             public static function wx_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.7'></h5>
        
@@ -244,9 +250,10 @@
               * @param $mhtOrderAmt 订单金额单位分
               * @param $notifyUrl  商户后台通知URL
               * @param $outputType 输出格式  0 返回二维码串 1 返回支付链接
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
               */
-             public static function ali_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType)        
+             public static function ali_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType,$isTest)        
        <h5 id='2.1.8'></h5>
        
        - 手Q主扫支付
@@ -261,9 +268,10 @@
               * @param $mhtOrderAmt 订单金额单位分
               * @param $notifyUrl  商户后台通知URL
               * @param $outputType 输出格式  0 返回二维码串 1 返回支付链接
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
               */
-             public static function handq_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType)
+             public static function handq_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.9'></h5>
        
@@ -281,9 +289,10 @@
             * @param $mhtOrderAmt 订单金额单位分
             * @param $notifyUrl  商户后台通知URL
             * @param $outputType 输出格式  0 返回二维码串 1 返回支付链接
+            * @param $isTest 是否测试 True 测试环境 False 生产环境
             * @return string
             */
-           public static function jd_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType)
+           public static function jd_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType,$isTest)
        
        - 银联主扫支付
        
@@ -299,9 +308,10 @@
             * @param $mhtOrderAmt 订单金额单位分
             * @param $notifyUrl  商户后台通知URL
             * @param $outputType 输出格式  0 返回二维码串 1 返回支付链接
+            * @param $isTest 是否测试 True 测试环境 False 生产环境
             * @return string
             */
-           public static function union_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType)
+           public static function union_trade08($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$outputType,$isTest)
        
        - 微信公众号支付
      
@@ -316,9 +326,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function wx_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl)       
+             public static function wx_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$isTest)       
        
        <h5 id='2.1.13'></h5>
        
@@ -335,9 +346,10 @@
               * @param $notifyUrl  商户后台通知URL
               * @param $frontNotifyUrl 商户前台通知URL
               * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
               */
-             public static function ali_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl)       
+             public static function ali_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$isTest)       
        <h5 id='2.1.15'></h5>
        
        - 手Q公众号支付
@@ -353,9 +365,10 @@
               * @param $notifyUrl  商户后台通知URL
               * @param $frontNotifyUrl 商户前台通知URL
               * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
               */
-              public static function handq_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl)
+              public static function handq_trade0600($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$isTest)
        
        <h5 id='2.1.17'></h5>
        
@@ -372,9 +385,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function wx_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function wx_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.18'></h5>
        
@@ -391,9 +405,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function ali_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function ali_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
            
        <h5 id='2.1.19'></h5>
        
@@ -410,9 +425,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function union_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function union_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.20'></h5>
        - 招行一网通H5
@@ -428,9 +444,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function cmbywt_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function cmbywt_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.21'></h5>
               
@@ -447,9 +464,10 @@
              * @param $notifyUrl  商户后台通知URL
              * @param $frontNotifyUrl 商户前台通知URL
              * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-             public static function handq_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function handq_trade0601($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.22'></h5>
        
@@ -466,9 +484,10 @@
                 * @param $notifyUrl  商户后台通知URL
                 * @param $frontNotifyUrl 商户前台通知URL
                 * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+                * @param $isTest 是否测试 True 测试环境 False 生产环境
                 * @return string
                 */
-                public static function ali_trade04($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+                public static function ali_trade04($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        <h5 id='2.1.23'></h5>
        
        - 银联网页web
@@ -484,9 +503,10 @@
               * @param $notifyUrl  商户后台通知URL
               * @param $frontNotifyUrl 商户前台通知URL
               * @param $outputType 0.返回支付跳转链接 2.返回支付页面（html）
+              * @param $isTest 是否测试 True 测试环境 False 生产环境
               * @return string
              */
-             public static function union_trade04($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType)
+             public static function union_trade04($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$outputType,$isTest)
        
        <h5 id='2.1.24'></h5>
        
@@ -502,9 +522,10 @@
                * @param $mhtOrderAmt 订单金额单位分
                * @param $notifyUrl  商户后台通知URL
                * @param $frontNotifyUrl 商户前台通知URL
+               * @param $isTest 是否测试 True 测试环境 False 生产环境
                * @return string
                */
-              public static function wx_app($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl)
+              public static function wx_app($appId,$appKey,$mhtOrderNo,$mhtOrderName,$mhtOrderDetail,$mhtOrderAmt,$notifyUrl,$frontNotifyUrl,$isTest)
             
        下单接口字段含义如下:
        
@@ -793,8 +814,9 @@
          * @param $appKey
          * @param $mhtOrderNo
          * @return string
+         * @param $isTest 是否测试 True 测试环境 False 生产环境
          */
-        public static function orederQuery08($appId,$appKey,$mhtOrderNo)
+        public static function orederQuery08($appId,$appKey,$mhtOrderNo,$isTest)
        
 <h5 id='2.3.2'></h5>
 
@@ -805,9 +827,10 @@
          * @param $appId
          * @param $appKey
          * @param $mhtOrderNo
+         * @param $isTest 是否测试 True 测试环境 False 生产环境
          * @return string
          */
-        public static function orederQuery05($appId,$appKey,$mhtOrderNo)
+        public static function orederQuery05($appId,$appKey,$mhtOrderNo,$isTest)
         
 <h5 id='2.3.3'></h5>
 
@@ -818,9 +841,10 @@
          * @param $appId
          * @param $appKey
          * @param $mhtOrderNo
+         * @param $isTest 是否测试 True 测试环境 False 生产环境
          * @return string
          */
-        public static function orederQuery0600($appId,$appKey,$mhtOrderNo)
+        public static function orederQuery0600($appId,$appKey,$mhtOrderNo,$isTest)
         
 <h5 id='2.3.4'></h5>
 
@@ -831,9 +855,10 @@
        * @param $appId
        * @param $appKey
        * @param $mhtOrderNo
+       * @param $isTest 是否测试 True 测试环境 False 生产环境
        * @return string
        */
-       public static function orederQuery0601($appId,$appKey,$mhtOrderNo)
+       public static function orederQuery0601($appId,$appKey,$mhtOrderNo,$isTest)
 
         
 <h5 id='2.3.5'></h5>
@@ -845,9 +870,10 @@
        * @param $appId
        * @param $appKey
        * @param $mhtOrderNo
+       * @param $isTest 是否测试 True 测试环境 False 生产环境
        * @return string
       */
-      public static function orederQuery04($appId,$appKey,$mhtOrderNo)
+      public static function orederQuery04($appId,$appKey,$mhtOrderNo,$isTest)
 
 <h5 id='2.3.6'></h5>
 
@@ -858,9 +884,10 @@
          * @param $appId
          * @param $appKey
          * @param $mhtOrderNo
+         * @param $isTest 是否测试 True 测试环境 False 生产环境
          * @return string
          */
-        public static function orederQuery14($appId,$appKey,$mhtOrderNo)
+        public static function orederQuery14($appId,$appKey,$mhtOrderNo,$isTest)
 
 
 订单查询接口字段含义如下:
@@ -931,9 +958,10 @@
             * @param $mhtRefundNo 退款号
             * @param $amount 退款金额（退款金额不能大于可清算的支付金额）
             * @param $reason 退款原因
+            * @param $isTest 是否测试 True 测试环境 False 生产环境
             * @return string
             */
-           public static function refund($appId,$appKey,$mhtOrderNo,$mhtRefundNo,$amount,$reason)
+           public static function refund($appId,$appKey,$mhtOrderNo,$mhtRefundNo,$amount,$reason,$isTest)
 
 <h5 id='2.4.2'></h5>
 
@@ -944,9 +972,10 @@
           * @param $appId 应用Id
           * @param $appKey 应用秘钥
           * @param $mhtRefundNo 退款单号
+          * @param $isTest 是否测试 True 测试环境 False 生产环境
           * @return string
           */
-         public static function refundQuery($appId,$appKey,$mhtRefundNo)
+         public static function refundQuery($appId,$appKey,$mhtRefundNo,$isTest)
 
 <h5 id='2.4.3'></h5>
 
@@ -959,9 +988,10 @@
              * @param $mhtOrderNo 原订单号
              * @param $mhtRefundNo 撤销单号
              * @param $reason 撤销原因
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-            public static function backOrder($appId,$appKey,$mhtOrderNo,$mhtRefundNo,$reason)   
+            public static function backOrder($appId,$appKey,$mhtOrderNo,$mhtRefundNo,$reason,$isTest)   
 
 <h5 id='2.4.4'></h5>
 
@@ -972,8 +1002,9 @@
              * @param $appId 应用Id
              * @param $appKey 应用秘钥
              * @param $mhtRefundNo 撤销单号
+             * @param $isTest 是否测试 True 测试环境 False 生产环境
              * @return string
              */
-            public static function backOrderQuery($appId,$appKey,$mhtRefundNo)                         
+            public static function backOrderQuery($appId,$appKey,$mhtRefundNo,$isTest)                         
 
          
